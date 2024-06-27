@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="CreateAccount.css"/>
+    <title>Create Account</title>
+</head>
+<body style="background-color: #dde0eb; margin-top: 100px;">
+    <div>
+        <h1 style="color: #102770; text-align: center;">Create Account</h1>
+    </div>
+    <div>
+        <form id="form">
+            <table style="padding-left: 44%; padding-right: 60%;">
+                <tr>
+                    <th style="text-align: left; font-size: large; padding-bottom: 7px;">
+                        <label for="username" style="color: #031a69;">Name</label><br>
+                        <input id="username" type="text" placeholder="Name" name="username" style="height: 0.5cm;"><br>
+                        <div id="errorName" style="color: red; font-size: smaller;font-weight: 50;"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="text-align: left; font-size: large; padding-bottom: 7px;">
+                        <label for="email" style="color: #031a69;">Email</label><br>
+                        <input id="email" type="email" placeholder="Email" name="email"><br>
+                        <div id="errorEmail" style="color: red; font-size: smaller; font-weight: 50;"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="text-align: left; font-size: large; padding-bottom: 7px;">
+                        <label for="password" style="color: #031a69;">Password</label><br>
+                        <input id="password" type="password" placeholder="Password" name="password"><br>
+                        <div id="errorPass" style="color: red; font-size: smaller;font-weight: 50;"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="text-align: left; font-size: large; padding-bottom: 7px;">
+                        <label for="confirmPassword" style="color: #031a69;">Confirm Password</label><br>
+                        <input id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword"><br>
+                        <div id="errorConfirmPass" style="color: red; font-size: smaller;font-weight: 50;"></div>
+                    </th>
+                </tr>
+            </table>
+                <input style="background-color: #102770; color: white; border-color: antiquewhite; margin-left: 680px; margin-top: 5px; width: 3cm; height: 0.8cm;" type="submit" value="Create Account" onclick="inputDetails()">
+        </form>
+    </div>
+    <!-- <div>
+        <textarea name="output" id="output"></textarea>
+    </div> -->
+    <script src="CreateAccount.js"></script>
+</body>
